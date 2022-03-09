@@ -1,54 +1,5 @@
 <!doctype html>
-<style>
-  .nav-link {
-    color: white !important;
-    height: auto;
 
-  }
-.sbtn{
-
-  padding-right: 100px;
-}
-  .logo {
-    height: 100px;
-    width: 100px;
-  }
-
-  .carousel-silde {
-    height: 600px;
-    width: 900px;
-  }
-
-  .logo {
-    width: 85px;
-    height: 60px;
-
-  }
-
-  .navbar {
-    padding: 0px !important;
-  }
-
-  .maindiv {
-    background-color: #14212e;
-  }
-
-  .formfont {
-
-    color: white;
-  }
-  .homecards
-  {
-    
-    margin-top: 40px;
-  }
-  .homeform
-  {
-    background-color: cadetblue;
-    padding: 50PX;
-
-  }
-</style>
 <html lang="en">
 
 <head>
@@ -56,6 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="/source/0.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -161,8 +113,8 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quam!</p>
       </div>
     </div>
-    <!-- <div homecards> -->
-    <div class="container homecards">
+    <!-- <div class="homecards"> -->
+    <div class=" homecards">
       <div class="row">
         <div class="col">
           <div class="card" style="width: 18rem;">
@@ -175,32 +127,33 @@
             </div>
           </div>
         </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="/source/con3.webp" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">OUR SERVICES</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="/source/con3.webp" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">OUR CLIENTS</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="/source/con3.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">OUR SERVICES</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
         </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="/source/con3.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">OUR CLIENTS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+
+          </div>
+        </div>
       </div>
-      <div class="homeform"> 
+    </div>
+
+    <!-- <div class="homeform"> 
     <form>
       <div class="container">
         <div class="row g-3">
@@ -248,8 +201,38 @@
           </div>
         </div>
       </div>
-    </form>
+    </form> -->
+    <!-- </div> -->
+
+    <div class="container">
+      <fieldset>
+        <legend>contact us </legend>
+        <form action="action_page.php">
+          <br>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <br>
+          <label for="number"width=100px>Phone</label>
+          <input  type="number" id="number" name="number" placeholder="Your phone no. ..">
+          <br>
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <br>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+
+        </form>
+      </fieldset>
     </div>
+  </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
