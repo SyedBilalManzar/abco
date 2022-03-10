@@ -8,10 +8,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="/source/0.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css">
 
   <title>AB & CO</title>
 </head>
@@ -115,6 +122,7 @@
     </div>
     <!-- <div class="homecards"> -->
     <div class=" homecards">
+      <div>
       <div class="row">
         <div class="col">
           <div class="card" style="width: 18rem;">
@@ -139,6 +147,42 @@
           </div>
         </div>
         <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="/source/con3.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">OUR CLIENTS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col  space">
+          <div class="card" style="width: 18rem;">
+            <img src="/source/con3.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">OUR CLIENTS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col space">
+          <div class="card" style="width: 18rem;">
+            <img src="/source/con3.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">OUR CLIENTS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col space">
           <div class="card" style="width: 18rem;">
             <img src="/source/con3.webp" class="card-img-top" alt="...">
             <div class="card-body">
@@ -203,70 +247,38 @@
       </div>
     </form> -->
     <!-- </div> -->
+    
 
-    <!-- <div class="container">
-      <fieldset>
-        <legend>contact us </legend>
-        <form action="action_page.php">
-          <br>
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <br>
-          <label for="number"width=100px>Phone</label>
-          <input  type="number" id="number" name="number" placeholder="Your phone no. ..">
-          <br>
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-          <br>
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-          <input type="submit" value="Submit">
-
-        </form>
+    <!-- Form contact -->
+    <form class="contactform">
+      <fieldset><legend>Contact Us</legend>
+      <h2 class="text-center py-4 font-bold font-up white-text">Contact us</h2>
+      <div class="md-form">
+        <i class="fa fa-user prefix white-text"></i>
+        <input type="text" id="form32" class="form-control">
+        <label for="form32">Your name</label>
+      </div>
+      <div class="md-form">
+        <i class="fa fa-envelope prefix white-text"></i>
+        <input type="text" id="form22" class="form-control">
+        <label for="form22">Your email</label>
+      </div>
+      <div class="md-form">
+        <i class="fa fa-tag prefix white-text"></i>
+        <input type="text" id="form322" class="form-control">
+        <label for="form342">Subject</label>
+      </div>
+      <div class="md-form">
+        <i class="fa fa-pencil prefix white-text"></i>
+        <textarea type="text" id="form82" class="md-textarea" style="height: 100px"></textarea>
+        <label for="form82">Your message</label>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-info btn-lg">Send</button>
+      </div>
       </fieldset>
-    </div>
-  </div> -->
-  <div>
-    <form action="#">
-      
-      <fieldset>
-        <legend>CONTACT US</legend>
-      <label for="First Name">First Name</label>
-      
-      <input type="text" class=ftext">
-      <label for="">Last Name</label>
-      <input type="text" class="ltext"> <br>
-      <label for="">Phone</label>
-      <input type="tel" name="tel" id="ctel">
-      <label for="">Email</label>
-      <input type="email" name="email" id="email"> <br>
-      <label for="">country</label>
-      <select id="country" name="country">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="fiat">Fiat</option>
-        <option value="audi">Audi</option>
-      </select>
-      <label for="">City</label> <br>
-      
-      <select id="city" name="city">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="fiat">Fiat</option>
-        <option value="audi">Audi</option>
-      </select> <br>
-      <label for="">Description</label>
-      <textarea name="" id="tarea" cols="30" rows="10"></textarea>
-    </fieldset>
     </form>
-  </div>
+    <!-- Form contact -->
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
