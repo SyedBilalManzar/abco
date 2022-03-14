@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="/source/0.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"> -->
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -24,7 +24,7 @@
 
 <body style="background-color: #dededf;">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand " href="#"><img class="logo" src="/source/2.png" alt="logo"></a>
+        <a class="navbar-brand" href="#"><img class="logo" src="/source/2.png" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -45,26 +45,26 @@
             What We Provide
           </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Quality</a>
-                        <a class="dropdown-item" href="#">Material</a>
+                        <a class="dropdown-item" href="/quality.html">Quality</a>
+                        <a class="dropdown-item" href="/material.html">Material</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="/jobs.html">Careers</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="aboutus.html">About Us</a>
+                    <a class="nav-link" href="aboutus.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="contactus.html">Contact us</a>
+                    <a class="nav-link" href="contactus.html">Contact us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="/clients.html">Our Clients</a>
+                    <a class="nav-link" href="/clients.html">Our Clients</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0 sbtn" type="submit">Search</button>
-            </form>
+            </form> -->
         </div>
     </nav>
 
@@ -89,12 +89,12 @@
             </legend>
             <div class="md-form ">
                 <i class="fa fa-user prefix text-dark "></i>
-                <input type="text " id="form32 " class="form-control ">
+                <input type="text" id="nam" class="form-control ">
                 <label for="form32 ">Your name</label>
             </div>
             <div class="md-form ">
                 <i class="fa fa-envelope prefix text-dark "></i>
-                <input type="text " id="form22 " class="form-control ">
+                <input type="text" id="em" class="form-control ">
                 <label for="form22 ">Your email</label>
             </div>
 
@@ -102,16 +102,16 @@
             <div class="md-form ">
                 <p style="margin-left: 50px; margin-top: 10px; ">Upload Your Resume</p>
                 <i class="fa fa-tag prefix text-dark "></i>
-                <input type="file " id="form322 " class="form-control ">
+                <input type="file" id="res" class="form-control ">
 
             </div>
             <div class="md-form ">
                 <i class="fa fa-pencil prefix text-dark "></i>
-                <textarea type="text " id="form82 " class="md-textarea " style="height: 100px "></textarea>
+                <textarea type="text" id="msg" class="md-textarea" style="height: 100px "></textarea>
                 <label for="form82 ">Your message</label>
             </div>
             <div class="text-center ">
-                <button class="btn btn-info btn-lg ">Send</button>
+                <button onclick="sendmail2()" class="btn btn-info btn-lg" type="button" id="b2 ">Send</button>
             </div>
         </fieldset>
     </form>
@@ -121,7 +121,7 @@
     <footer class="page-footer font-small bg-dark foot ">
 
         <!-- Footer Links -->
-        <div class="container bg-dark " style="margin-bottom: 0px; margin-top: 0px; ">
+        <div class="container bg-dark" style="margin-bottom: 0px; margin-top: 0px; ">
 
             <!-- Grid row-->
             <div class="row text-center d-flex justify-content-center pt-5 mb-3 bg-dark ">
@@ -153,7 +153,7 @@
                 <!-- Grid column -->
                 <div class="col-md-2 mb-3 ">
                     <h6 class="text-uppercase font-weight-bold ">
-                        <a href="javascript:void(0) " data-toggle="modal " data-target="#exampleModal ">Help</a>
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal ">Help</a>
                     </h6>
                 </div>
                 <!-- Grid column -->
@@ -168,7 +168,7 @@
 
             </div>
             <!-- Grid row-->
-            <hr class="rgba-white-light " style="margin: 0 15%; ">
+            <hr class="rgba-white-light" style="margin: 0 15%; ">
 
             <!-- Grid row-->
             <div class="row d-flex text-center justify-content-center mb-md-0 mb-4 ">
@@ -182,7 +182,7 @@
 
             </div>
             <!-- Grid row-->
-            <hr class="clearfix d-md-none rgba-white-light " style="margin: 10% 15% 5%; ">
+            <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%; ">
 
             <!-- Grid row-->
             <div class="row pb-3 ">
@@ -237,12 +237,12 @@
     </footer>
     <!-- Footer -->
     <!-- Modal -->
-    <div class="modal fade " id="exampleModal " tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
-        <div class="modal-dialog " role="document ">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true ">
+        <div class="modal-dialog" role="document ">
             <div class="modal-content ">
                 <div class="modal-header ">
-                    <h5 class="modal-title " id="exampleModalLabel ">Help</h5>
-                    <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                    <h5 class="modal-title" id="exampleModalLabel ">Help</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close ">
     <span aria-hidden="true ">&times;</span>
   </button>
                 </div>
@@ -251,8 +251,8 @@
                     consectetur perspiciatis odit amet. Modi rerum adipisci ducimus optio dolorem corporis fuga beatae doloribus blanditiis, harum officiis quod praesentium maxime qui animi corrupti quidem expedita veniam nulla quae sit! Fugiat!
                 </div>
                 <div class="modal-footer ">
-                    <button type="button " class="btn btn-secondary bg-dark " data-dismiss="modal ">Close</button>
-                    <button type="button " class="btn btn-primary bg-dark "><a href="/contactus.html ">Contact us</a></button>
+                    <button type="button" class="btn btn-secondary bg-dark" data-dismiss="modal ">Close</button>
+                    <button type="button" class="btn btn-primary bg-dark "><a href="/contactus.html ">Contact us</a></button>
 
                 </div>
             </div>
@@ -261,6 +261,9 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./Javascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://smtpjs.com/v3/smtp.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js "></script>

@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
         <a class="navbar-brand " href="#"><img class="logo" src="/source/2.png" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -44,11 +44,11 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             What We Provide
           </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Quality</a>
-                        <a class="dropdown-item" href="#">Material</a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item hov" href="/quality.html">Quality</a>
+                        <a class="dropdown-item hov" href="/material.html">Material</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Careers</a>
+                        <a class="dropdown-item" href="/jobs.html">Careers</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -61,10 +61,10 @@
                     <a class="nav-link " href="/clients.html">Our Clients</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0 sbtn" type="submit">Search</button>
-            </form>
+            </form> -->
         </div>
     </nav>
     <div class="maindiv">
@@ -128,7 +128,7 @@
                                 <h5 class="card-title">ABOUT US</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
                                 </p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                             </div>
                         </div>
                     </center>
@@ -140,7 +140,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">OUR SERVICES</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                             </div>
                         </div>
                     </center>
@@ -152,7 +152,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">OUR CLIENTS</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                             </div>
 
                         </div>
@@ -165,7 +165,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">OUR CLIENTS</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                             </div>
 
                         </div>
@@ -178,7 +178,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">OUR CLIENTS</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                             </div>
 
                         </div>
@@ -191,7 +191,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">OUR CLIENTS</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                             </div>
 
                         </div>
@@ -208,30 +208,31 @@
                 </legend>
                 <div class="md-form">
                     <i class="fa fa-user prefix text-dark"></i>
-                    <input type="text" id="form32" class="form-control">
+                    <input type="text" id="name" class="form-control">
                     <label for="form32">Your name</label>
                 </div>
                 <div class="md-form">
                     <i class="fa fa-envelope prefix text-dark"></i>
-                    <input type="text" id="form22" class="form-control">
+                    <input type="text" id="email" class="form-control">
                     <label for="form22">Your email</label>
                 </div>
                 <div class="md-form">
                     <i class="fa fa-tag prefix text-dark"></i>
-                    <input type="text" id="form322" class="form-control">
+                    <input type="text" id="Subject" class="form-control">
                     <label for="form342">Subject</label>
                 </div>
                 <div class="md-form">
                     <i class="fa fa-pencil prefix text-dark"></i>
-                    <textarea type="text" id="form82" class="md-textarea" style="height: 100px"></textarea>
+                    <textarea type="text" id="message" class="md-textarea" style="height: 100px"></textarea>
                     <label for="form82">Your message</label>
                 </div>
                 <div class="text-center">
-                    <button class="btn btn-info btn-lg">Send</button>
+                    <button onclick="sendmail()" class="btn btn-info btn-lg " type="button" id="b1 ">Send</button>
                 </div>
             </fieldset>
         </form>
         <!-- Form contact -->
+
 
         <!-- Footer -->
         <footer class="page-footer font-small bg-dark foot">
@@ -375,6 +376,9 @@
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="./Javascript.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+        <script src="https://smtpjs.com/v3/smtp.js "></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js "></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js "></script>
